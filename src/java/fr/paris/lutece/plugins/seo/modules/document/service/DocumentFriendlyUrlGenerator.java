@@ -51,7 +51,7 @@ import java.util.List;
 /**
  * Document Alias Generator
  */
-public class DocumentFirendlyUrlGenerator implements FriendlyUrlGenerator
+public class DocumentFriendlyUrlGenerator implements FriendlyUrlGenerator
 {
     private static final String GENERATOR_NAME = "Document Alias Generator";
     private static final String TECHNICAL_URL = "/jsp/site/Portal.jsp?document_id={0}&portlet_id={1}";
@@ -68,7 +68,7 @@ public class DocumentFirendlyUrlGenerator implements FriendlyUrlGenerator
         {
             Document document = DocumentHome.findByPrimaryKey( p.getDocumentId(  ) );
             FriendlyUrl rule = new FriendlyUrl(  );
-            rule.setFriendlyUrl( SLASH + GeneratorUtils.convertToAlias( document.getTitle(  ) ) );
+            rule.setFriendlyUrl( SLASH + FriendlyUrlUtils.convertToFriendlyUrl( document.getTitle(  ) ) );
 
             Object[] args = { p.getDocumentId(  ), p.getPortletId(  ) };
             String strTechnicalUrl = MessageFormat.format( TECHNICAL_URL, args );
