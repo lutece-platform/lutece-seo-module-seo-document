@@ -56,9 +56,9 @@
     </properties>
 
     <scm>
-        <connection>scm:git:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/seo/module-seo-document</connection>
-        <developerConnection>scm:git:https://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/seo/module-seo-document</developerConnection>
-        <url>http://dev.lutece.paris.fr/viewvc/lutece/portal/trunk/plugins/seo/module-seo-document</url>
+        <connection>scm:git:https://github.com/lutece-platform/lutece-seo-module-seo-document.git</connection>
+        <developerConnection>scm:git:https://github.com/lutece-platform/lutece-seo-module-seo-document.git</developerConnection>
+        <url>https://github.com/lutece-platform/lutece-seo-module-seo-document.git</url>
     </scm>
     
 </project>
